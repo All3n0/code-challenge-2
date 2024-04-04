@@ -11,11 +11,14 @@ function prime(num) {
         }//If throughout the loop the remainder is never zero that nuber is considered prime.
     }
     return true;}
+    
 //The following function then filters the values depending on whether they returned true or false.
 function filterNumberz(numbers){
     return numbers.filter(num=>prime(num));}
 //primenumbers is a constant that calls the function filterNumberz apssing the manamba array as an arguement.
+function returnee(){
 const primeNumbers=filterNumberz(manamba);
 console.log(primeNumbers);//Then logged into the console.
-
-
+return primeNumbers;
+}
+returnee()
